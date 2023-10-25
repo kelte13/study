@@ -33,9 +33,16 @@
 		</Compiler>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="stack.c">
+			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="stack.c.c">
 			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
 		</Unit>
 		<Unit filename="stack.h" />
 		<Extensions>
