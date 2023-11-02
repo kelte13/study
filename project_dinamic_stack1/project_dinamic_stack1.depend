@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1698869874 source:d:\github\study\project_dinamic_stack1\main.c
+1698871493 source:d:\github\study\project_dinamic_stack1\main.c
 	"stack.h"
 
-1698871422 source:d:\github\study\project_dinamic_stack1\stack.c
+1698929569 source:d:\github\study\project_dinamic_stack1\stack.c
 	"stack.h"
 
-1698871273 d:\github\study\project_dinamic_stack1\stack.h
+1698929392 d:\github\study\project_dinamic_stack1\stack.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>

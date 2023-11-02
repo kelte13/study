@@ -15,7 +15,7 @@ struct stack_item_t *talloc(void) {
 void show(void) {
     struct stack_item_t *tmp;
     for (tmp = stack; tmp; tmp = tmp->next) {
-        printf ("%d", tmp->value);
+        printf ("%d\t", tmp->value);
     }
 }
 
@@ -28,9 +28,9 @@ int push(int n){
 }
 
 int pop(void) {
-//    if (is_empty() == 1)
-//       return -1;
- //   else {
+    if (is_empty() == 1)
+       return -1;
+    else {
         int temp;
         struct stack_item_t *prev = NULL;
         prev = stack;
@@ -38,12 +38,12 @@ int pop(void) {
         stack = stack->next;
         free(prev);
         return temp;
-   //}
+   }
 }
 
-//bool is_empty(void) {
-  // return (!stack);
-//}
+bool is_empty(void) {
+   return (!stack);
+}
 
 
 
