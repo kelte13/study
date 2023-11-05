@@ -21,5 +21,10 @@ int main() {
     a = pop();
     printf("%d\n", a);
     show();
+    a = pop();
+    printf("%d\n", a);
+    a = pop();
+    printf("%d\n", a);
+    show();
     return 0;
 }

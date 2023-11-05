@@ -58,16 +58,28 @@ int push(int n)
 }
 
 int pop(void) {
+
     struct stack_item_t *stack_copy_last = stack;
-    struct stack_item_t *stack_copy_penultimate = stack;
-    while (stack_copy_last->next) {
-        stack_copy_last = stack_copy_last->next;
+    if (stack_copy_last->next) {
+        while (stack_copy_last->next) {
+            stack_copy_last = stack_copy_last->next;
+        }
+        struct stack_item_t *stack_copy_penultimate = stack;
+        while (stack_copy_penultimate->next->next) {
+            stack_copy_penultimate = stack_copy_penultimate->next;
+        }
+        int temp = stack_copy_last->value;
+        stack_copy_penultimate->next = NULL;
+        free(stack_copy_last);
+        return temp;
     }
-    while (stack_copy_penultimate->next->next) {
-        stack_copy_penultimate = stack_copy_penultimate->next;
+    else {
+         while (stack_copy_last->next) {
+            stack_copy_last = stack_copy_last->next;
+        }
+        int temp = stack_copy_last->value;
+        free(stack_copy_last);
+        stack = NULL;
+        return temp;
     }
-    int temp = stack_copy_last->value;
-    stack_copy_penultimate->next = NULL;
-    free(stack_copy_last);
-    return temp;
 }
