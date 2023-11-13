@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1699202774 source:d:\github\study\project_dynamik_stack_fifo\main.c
+	"stack.h"
+
+1699200074 d:\github\study\project_dynamik_stack_fifo\stack.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1699202795 source:d:\github\study\project_dynamik_stack_fifo\stack.c
+	"stack.h"
+
